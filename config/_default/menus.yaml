@@ -29,7 +29,7 @@ main:
 
 
   - name: CV
-    url: /uploads/Muhammad_Adil_Resume.pdf
+    url: /uploads/Muhammad Adil Resume.pdf
     weight: 50
   - name: Scholar
     url: https://scholar.google.com/citations?user=SyKq5A4AAAAJ&hl=en
