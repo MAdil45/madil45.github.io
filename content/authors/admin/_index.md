@@ -53,6 +53,10 @@ profiles:
     
   - icon: brands/instagram
     url: https://www.instagram.com/iadil_14/
+
+ - icon: academicons/cv
+    url: /uploads/Muhammad Adil Resume.pdf
+    label: Download CV
  
 
 # Research Interests
