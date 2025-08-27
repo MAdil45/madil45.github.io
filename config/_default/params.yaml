@@ -1,12 +1,66 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# # SITE SETUP
+# # Guide: https://docs.hugoblox.com/tutorial/
+# # Documentation: https://docs.hugoblox.com/
+# # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# SITE SETUP
+# # SITE SETUP
+# params:
+#   customCSS:
+#     - css/overrides.css
+
+# appearance:
+#   mode: system
+#   color: emerald
+
+# marketing:
+#   seo:
+#     site_type: Person
+#     local_business_type: ''
+#     org_name: 'Muhammad Adil'
+#     description: 'Ph.D. Candidate in Computer Science (UVM) — Geospatial AI, Remote Sensing, Deep Learning, Forecasting, Environmental Monitoring.'
+#     twitter: ''   # add your handle if you want Twitter cards e.g., 'madil45'
+#   analytics:
+#     google_analytics: ''  # e.g., G-XXXXXXXX if you have it
+#     baidu_tongji: ''
+#     plausible: ''
+#     fathom: ''
+#     pirsch: ''
+#   verification:
+#     google: ''
+#     baidu: ''
+
+# header:
+#   navbar:
+#     enable: true
+#     blox: "navbar"
+#     fixed_to_top: true
+#     show_search: true
+#     show_theme_chooser: true
+#     logo:
+#       text: "Muhammad Adil"
+
+# footer:
+#   copyright:
+#     notice: '© {year} Muhammad Adil. This work is licensed under {license}'
+#     license:
+#       enable: true
+#       allow_derivatives: false
+#       share_alike: true
+#       allow_commercial: false
+
+# locale:
+#   date_format: 'Jan 2, 2006'
+#   time_format: '3:04 PM'
+
+# features:
+#   math:
+#     enable: false
+#   privacy_pack:
+#     enable: false
+
 appearance:
-  mode: system
-  color: emerald
+  mode: system          # system | light | dark
+  color: emerald        # theme color palette
 
 marketing:
   seo:
@@ -14,9 +68,9 @@ marketing:
     local_business_type: ''
     org_name: 'Muhammad Adil'
     description: 'Ph.D. Candidate in Computer Science (UVM) — Geospatial AI, Remote Sensing, Deep Learning, Forecasting, Environmental Monitoring.'
-    twitter: ''   # add your handle if you want Twitter cards e.g., 'madil45'
+    twitter: ''         # e.g., 'madil45'
   analytics:
-    google_analytics: ''  # e.g., G-XXXXXXXX if you have it
+    google_analytics: ''  # e.g., G-XXXXXXXX
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -28,12 +82,12 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: "navbar"
+    blox: 'navbar'
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Muhammad Adil"
+      text: 'Muhammad Adil'
 
 footer:
   copyright:
@@ -53,3 +107,9 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+# ⬇️ Add custom CSS files (served from /static/)
+# We’ll put our layout tweaks in /static/css/overrides.css
+params:
+  customCSS:
+    - css/overrides.css
