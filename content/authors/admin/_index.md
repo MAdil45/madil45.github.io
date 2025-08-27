@@ -35,18 +35,25 @@ profiles:
   - icon: at-symbol
     url: 'mailto:muhammad.adil@uvm.edu'
     label: E-mail Me
+    
   - icon: brands/github
     url: https://github.com/MAdil45
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/muhammad-adil455/
-  - icon: brands/x
-    url: https://x.com/mdad912
-  - icon: brands/instagram
-    url: https://www.instagram.com/iadil_14/
+    
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=SyKq5A4AAAAJ&hl=en
+    
   - icon: academicons/orcid
     url: https://orcid.org/0009-0006-7435-0531
+    
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/muhammad-adil455/
+    
+  - icon: brands/x
+    url: https://x.com/mdad912
+    
+  - icon: brands/instagram
+    url: https://www.instagram.com/iadil_14/
+ 
 
 # Research Interests
 interests:
