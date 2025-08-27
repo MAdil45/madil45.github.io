@@ -116,7 +116,8 @@ languages:
 ---
 
 ## About Me
+I am a third-year PhD student in Computer Science at the University of Vermont, advised by [Prof. Safwan W. Shah](https://www.wshahaigroup.com/). My research centers on Geospatial AI, Remote Sensing, and Time-Series Forecasting for environmental monitoring, with a particular focus on water quality assessment.
 
-I am a PhD Candidate and Graduate Research Assistant in the Department of Computer Science at the University of Vermont, working with the Vermont Artificial Intelligence Lab (VAIL). My research focuses on **Geospatial AI, Remote Sensing, and Deep Learning**, with projects spanning harmful algal bloom forecasting, tree canopy change detection, and spatiotemporal transformers for environmental monitoring.
+Currently, I am developing a pixel-level forecasting system for Cyanobacterial Harmful Algal Blooms in Lake Champlain. This work aims to develop a remote-sensing-only framework that is scalable for lakes worldwide, leveraging publicly available satellite data.
 
-I am passionate about building scalable machine learning models for satellite data, addressing challenges like cloud contamination, sparse sampling, and ecological forecasting, with the goal of improving environmental monitoring and decision-making.
+I am always eager to explore new opportunities for collaboration. If my research aligns with your interests or if you would like to discuss potential partnerships, please feel free to reach out.
