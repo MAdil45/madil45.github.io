@@ -71,12 +71,12 @@ education:
     date_end: 2020-07-01
     summary: |
       Thesis: *Multi-Scale Adaptive Super Resolution Person Re-Identification*.
-  - area: BS Computer Science
-    institution: [Your Undergrad University Name Here]
-    date_start: 2013-01-01
-    date_end: 2017-01-01
+  - area: BS Telecomunication Systems
+    institution: Department of Communication and Cyber Security
+    date_start: 2011-02-14
+    date_end: 2015-08-31
     summary: |
-      [Add if you’d like — GPA, focus, thesis, or skip]
+     Skip
 
 # Skills
 skills:
