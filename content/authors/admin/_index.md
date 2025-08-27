@@ -55,7 +55,7 @@ profiles:
     url: https://www.instagram.com/iadil_14/
 
   - icon: academicons/cv
-    url: /uploads/Muhammad Adil Resume.pdf
+    url: /uploads/muhammadAdil.pdf
     label: Download CV
  
 
