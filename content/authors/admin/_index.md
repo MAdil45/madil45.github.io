@@ -10,7 +10,7 @@ first_name: Muhammad
 last_name: Adil
 
 # Pronouns
-pronouns: he/him
+pronouns: He/Him
 
 # Status emoji (optional)
 status:
