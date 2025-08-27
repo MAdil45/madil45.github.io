@@ -60,8 +60,8 @@ interests:
   - Geospatial AI
   - Remote Sensing
   - Spatio-Temporal Modeling
+  - Generative AI
   - Change Detection
-  - Deep Learning
 
 # Education
 education:
