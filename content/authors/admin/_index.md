@@ -1,6 +1,6 @@
 ---
 # Display name
-# title: Muhammad Adil
+title: Muhammad Adil
 
 # Name pronunciation (optional)
 name_pronunciation: 
