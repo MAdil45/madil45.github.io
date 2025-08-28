@@ -1,66 +1,103 @@
-/* sanity check */
-html { outline: 1px solid red; } /* temporary: proves the file is loaded */
+/* ======= Hero/Bio header custom layout (robust selectors) ======= */
 
-/* ======= Hero/Bio header custom layout ======= */
+/* Tighten vertical whitespace on the hero/banner */
+.hero-custom,
+.home-section.hero-custom,
+.section.hero-custom,
+.wg-hero.hero-custom {
+  padding-top: 2.25rem !important;
+  padding-bottom: 2.25rem !important;
+}
 
-/* tighten vertical whitespace on the green banner */
-.hero-custom { padding-top: 2.25rem !important; padding-bottom: 2.25rem !important; }
-
-/* grid: left = photo/name/socials, right = About text */
-.hero-custom .container, 
-.hero-custom .section-container, 
-.hero-custom .row {
+/* Create a two-column grid on wide screens */
+.hero-custom .container,
+.hero-custom .section-container,
+.hero-custom .row,
+.home-section.hero-custom .row,
+.wg-hero.hero-custom .row {
   display: grid !important;
-  grid-template-columns: 340px 1fr;
+  grid-template-columns: minmax(260px, 340px) 1fr;
   gap: 2rem;
   align-items: center;
 }
 
-/* left column bits: align left */
-.hero-custom .portrait, 
-.hero-custom .portrait-title, 
-.hero-custom .avatar-wrapper, 
-.hero-custom .author__network, 
-.hero-custom .network-icons { 
-  text-align: left !important; 
-  justify-content: flex-start !important; 
+/* Left column: avatar/name/socials aligned left */
+.hero-custom .portrait,
+.hero-custom .portrait-title,
+.hero-custom .avatar-wrapper,
+.hero-custom .author__network,
+.hero-custom .network-icons,
+.hero-custom .author__network ul {
+  text-align: left !important;
+  justify-content: flex-start !important;
 }
 
-/* avatar size */
-.hero-custom .avatar, 
-.hero-custom .avatar-wrapper img { 
-  width: 180px; height: 180px; object-fit: cover; border-radius: 9999px; 
+/* Avatar sizing (covers both possible avatar wrappers) */
+.hero-custom .avatar,
+.hero-custom .avatar-wrapper img,
+.hero-custom [class*="avatar"] img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 9999px;
 }
 .hero-custom .portrait-title { margin-bottom: 0.5rem; }
 
-/* tidy socials */
-.hero-custom .author__network, 
-.hero-custom .network-icons { display: flex; gap: 0.65rem; }
+/* Social icons tidy spacing */
+.hero-custom .author__network,
+.hero-custom .network-icons {
+  display: flex;
+  gap: 0.65rem;
+}
 
-/* ensure right column flows full width */
-.hero-custom .col-12, 
-.hero-custom .col-lg-8 { width: 100% !important; }
+/* Ensure the right column can span fully */
+.hero-custom .col-12,
+.hero-custom .col-lg-8,
+.hero-custom .content,
+.hero-custom .about,
+.hero-custom .bio {
+  width: 100% !important;
+}
 
-/* kill any center text from theme defaults */
-.hero-custom .content, 
-.hero-custom .about, 
-.hero-custom .bio, 
-.hero-custom p, 
-.hero-custom h1, 
-.hero-custom h2, 
-.hero-custom h3 { text-align: left !important; }
+/* Kill any center alignment inherited from theme */
+.hero-custom .content,
+.hero-custom .about,
+.hero-custom .bio,
+.hero-custom p,
+.hero-custom h1,
+.hero-custom h2,
+.hero-custom h3 {
+  text-align: left !important;
+}
 
-/* responsive tweaks */
+/* Medium screens */
 @media (max-width: 1100px) {
-  .hero-custom .container, 
-  .hero-custom .section-container, 
-  .hero-custom .row { grid-template-columns: 300px 1fr; gap: 1.5rem; }
-}
-@media (max-width: 780px) {
-  .hero-custom .container, 
-  .hero-custom .section-container, 
-  .hero-custom .row { display: block !important; }
-  .hero-custom { padding-top: 1.25rem !important; padding-bottom: 1.5rem !important; }
-  .hero-custom .avatar { width: 140px; height: 140px; }
+  .hero-custom .container,
+  .hero-custom .section-container,
+  .hero-custom .row,
+  .home-section.hero-custom .row,
+  .wg-hero.hero-custom .row {
+    grid-template-columns: 300px 1fr;
+    gap: 1.5rem;
+  }
 }
 
+/* Small screens: stack cleanly */
+@media (max-width: 780px) {
+  .hero-custom .container,
+  .hero-custom .section-container,
+  .hero-custom .row,
+  .home-section.hero-custom .row,
+  .wg-hero.hero-custom .row {
+    display: block !important;
+  }
+  .hero-custom {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .hero-custom .avatar,
+  .hero-custom [class*="avatar"] img {
+    width: 140px;
+    height: 140px;
+  }
+}
