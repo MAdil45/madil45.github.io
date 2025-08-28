@@ -1,5 +1,5 @@
 /* ======= Hero/Bio header custom layout (robust selectors) ======= */
-
+body { background: pink !important; }
 /* Tighten vertical whitespace on the hero/banner */
 .hero-custom,
 .home-section.hero-custom,
