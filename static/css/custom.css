@@ -1,0 +1,154 @@
+/* File: static/css/custom.css */
+/* Targeted CSS for Hugo Academic biography section */
+
+/* Debug border to confirm CSS is loading */
+body {
+  border-top: 3px solid lime !important;
+}
+
+/* Target any section that contains biography content */
+section[id*="biography"], 
+section.wg-biography,
+section.home-section,
+.resume-biography-3,
+div[data-view-component="true"] {
+  background: rgba(255, 0, 0, 0.1) !important; /* Light red background for debugging */
+}
+
+/* More specific targeting for the container */
+.home-section .container,
+.wg-biography .container,
+section .container {
+  max-width: 1200px !important;
+}
+
+/* Target the row containing the profile */
+.home-section .row,
+.wg-biography .row,
+section .row {
+  display: grid !important;
+  grid-template-columns: 300px 1fr !important;
+  gap: 3rem !important;
+  align-items: start !important;
+  margin: 0 !important;
+  padding: 2rem 0 !important;
+}
+
+/* Target the left column - this should contain avatar and info */
+.home-section .row > div:first-child,
+.wg-biography .row > div:first-child,
+section .row > div:first-child,
+.col-12:first-child,
+.col-lg-4,
+.col-md-5 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  background: rgba(0, 255, 0, 0.1) !important; /* Light green for debugging */
+  padding: 2rem 1rem !important;
+  position: relative !important;
+}
+
+/* Target the portrait/title section */
+.portrait-title,
+div[class*="portrait"] {
+  order: 1 !important;
+  margin-bottom: 2rem !important;
+  width: 100% !important;
+}
+
+.portrait-title h1 {
+  font-size: 1.75rem !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 600 !important;
+}
+
+/* Target the avatar */
+.avatar,
+.avatar-wrapper,
+div[class*="avatar"],
+img[class*="avatar"] {
+  order: 2 !important;
+  margin-bottom: 1rem !important;
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1) !important;
+}
+
+/* Target social media icons */
+.network-icon,
+.author-networks,
+ul[class*="network"],
+div[class*="network"] {
+  order: 3 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  position: absolute !important;
+  left: calc(100% - 80px) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background: rgba(0, 0, 255, 0.1) !important; /* Light blue for debugging */
+}
+
+.network-icon a,
+.author-networks a,
+ul[class*="network"] a,
+div[class*="network"] a {
+  color: #6b7280 !important;
+  font-size: 1.4rem !important;
+  padding: 0.5rem !important;
+  border-radius: 50% !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: white !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.network-icon a:hover,
+.author-networks a:hover,
+ul[class*="network"] a:hover,
+div[class*="network"] a:hover {
+  color: #059669 !important;
+  background-color: #f0fdf4 !important;
+  transform: scale(1.1) !important;
+}
+
+/* Target the right column */
+.home-section .row > div:last-child,
+.wg-biography .row > div:last-child,
+section .row > div:last-child,
+.col-12:last-child,
+.col-lg-8,
+.col-md-7 {
+  padding-left: 0 !important;
+  background: rgba(255, 255, 0, 0.1) !important; /* Light yellow for debugging */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .home-section .row,
+  .wg-biography .row,
+  section .row {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .network-icon,
+  .author-networks,
+  ul[class*="network"],
+  div[class*="network"] {
+    position: static !important;
+    transform: none !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin-top: 1rem !important;
+  }
+}
