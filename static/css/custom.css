@@ -14,7 +14,7 @@ section.home-section {
 
 /* Target the main container */
 .container {
-  max-width: 50px !important;
+  max-width: 1500px !important;
   margin: 0 auto !important;
   padding: 0 2rem !important;
 }
