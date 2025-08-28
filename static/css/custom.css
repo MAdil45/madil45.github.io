@@ -9,7 +9,7 @@ body {
 section[id*="biography"],
 section.wg-biography,
 section.home-section {
-  padding: 2rem 0 !important;
+  padding: 10rem 0 !important;
 }
 
 /* Target the main container */
