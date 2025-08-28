@@ -1,276 +1,96 @@
-// File: assets/scss/custom.scss
-// Hugo Academic custom styles for biography layout
+/* TEST - DELETE THIS LINE AFTER TESTING */
+body { background: yellow !important; border: 5px solid red !important; }
 
-// Remove the pink background - this was just for testing
-body {
-  background: inherit !important;
+/* More specific selectors for biography section */
+body main section,
+body section[id*="biography"],
+body section.wg-biography,
+body section.home-section,
+body .home-section {
+  padding: 8rem 0 !important;
+  background: lightblue !important; /* Test background */
 }
 
-// Target both the block type and custom class
-.resume-biography-3,
-.custom-biography-section {
-  
-  .container {
-    max-width: 1200px;
-  }
-
-  // Create two-column grid layout
-  .row {
-    display: grid !important;
-    grid-template-columns: 300px 1fr;
-    gap: 3rem;
-    align-items: start;
-    padding: 2rem 0;
-    
-    // Remove default Bootstrap row margins
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  // Left column styling (avatar + info)
-  .col-12:first-child,
-  .col-lg-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 2rem; // Add some top spacing to move everything down
-    
-    // Name and title - moved to top
-    .portrait-title {
-      order: 1;
-      margin-bottom: 2rem;
-      width: 100%;
-      
-      h1 {
-        font-size: 1.75rem;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-      }
-      
-      h2 {
-        font-size: 1.1rem;
-        color: #6b7280;
-        font-weight: 400;
-        margin-bottom: 0.25rem;
-      }
-      
-      h3 {
-        font-size: 0.95rem;
-        color: #9ca3af;
-        font-weight: 400;
-      }
-    }
-    
-    // Create a flex container for avatar and social icons
-    .avatar-wrapper,
-    .avatar {
-      order: 2;
-      margin-bottom: 0;
-      display: flex !important;
-      align-items: center;
-      gap: 2rem;
-      width: 100%;
-      justify-content: center;
-      
-      img {
-        width: 180px !important;
-        height: 180px !important;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        flex-shrink: 0;
-      }
-    }
-    
-    // Social media icons - positioned next to avatar
-    .network-icon {
-      order: 3;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
-      margin-top: -180px; // Move up to align with avatar
-      margin-left: 220px; // Position to the right of avatar
-      
-      a {
-        color: #6b7280;
-        font-size: 1.4rem;
-        transition: all 0.3s ease;
-        padding: 0.5rem;
-        border-radius: 50%;
-        width: 2.5rem;
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        &:hover {
-          color: #059669;
-          background-color: #f0fdf4;
-          transform: scale(1.1);
-        }
-      }
-    }
-  }
-
-  // Right column styling (content)
-  .col-12:last-child,
-  .col-lg-8 {
-    padding-left: 0;
-    
-    // About Me section
-    .biography {
-      margin-bottom: 2rem;
-      
-      h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: #1f2937;
-        border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 0.5rem;
-      }
-      
-      p {
-        line-height: 1.7;
-        color: #4b5563;
-        margin-bottom: 1rem;
-        
-        a {
-          color: #059669;
-          text-decoration: none;
-          
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-    
-    // Interests and Education sections
-    .row.gy-4 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 2rem;
-      
-      .col-lg-6 {
-        h3 {
-          font-size: 1.25rem;
-          margin-bottom: 1rem;
-          color: #1f2937;
-          border-bottom: 1px solid #e5e7eb;
-          padding-bottom: 0.5rem;
-        }
-        
-        ul {
-          list-style: none;
-          padding: 0;
-          
-          li {
-            padding: 0.5rem 0;
-            color: #4b5563;
-            display: flex;
-            align-items: center;
-            
-            &:before {
-              content: "▶";
-              color: #059669;
-              margin-right: 0.5rem;
-              font-size: 0.8rem;
-            }
-          }
-        }
-        
-        // Education specific styling
-        &:last-child {
-          .education-item {
-            margin-bottom: 1.5rem;
-            
-            .course {
-              font-weight: 600;
-              color: #1f2937;
-            }
-            
-            .institution {
-              color: #6b7280;
-              font-size: 0.95rem;
-            }
-            
-            .year {
-              color: #9ca3af;
-              font-size: 0.9rem;
-            }
-          }
-        }
-      }
-    }
-  }
+/* More specific container selector */
+body main .container,
+body section .container,
+body .home-section .container {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+  background: lightgreen !important; /* Test background */
 }
 
-// Responsive design
-@media (max-width: 992px) {
-  .resume-biography-3,
-  .custom-biography-section {
-    .row {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      text-align: center;
-    }
-    
-    // On smaller screens, revert to vertical layout
-    .col-12:first-child,
-    .col-lg-4 {
-      .network-icon {
-        margin-top: 1rem;
-        margin-left: 0;
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: center;
-      }
-    }
-    
-    .col-12:last-child,
-    .col-lg-8 {
-      .row.gy-4 {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-    }
-  }
+/* More specific row selector */
+body main .row,
+body section .row,
+body .home-section .row {
+  display: grid !important;
+  grid-template-columns: 320px 1fr !important;
+  gap: 3rem !important;
+  align-items: start !important;
+  width: 100% !important;
+  min-height: 400px !important;
+  background: lightcoral !important; /* Test background */
 }
 
-@media (max-width: 768px) {
-  .resume-biography-3,
-  .custom-biography-section {
-    .container {
-      padding: 1rem;
-    }
-    
-    .col-12:first-child,
-    .col-lg-4 {
-      padding-top: 1rem;
-      
-      .avatar-wrapper img,
-      .avatar img {
-        width: 140px !important;
-        height: 140px !important;
-      }
-      
-      .portrait-title h1 {
-        font-size: 1.5rem;
-      }
-      
-      .network-icon {
-        margin-top: 1rem;
-        margin-left: 0;
-        
-        a {
-          font-size: 1.2rem;
-          width: 2.2rem;
-          height: 2.2rem;
-        }
-      }
-    }
-  }
+/* More specific left column selectors */
+body .col-12.col-lg-4,
+body .col-12.col-md-5,
+body .flex.flex-col.md\:flex-row.justify-center.gap-12 > div:first-child {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  position: relative !important;
+  width: 100% !important;
+  justify-self: center !important;
+  background: lightyellow !important; /* Test background */
 }
+
+/* More specific avatar selectors */
+body img.avatar,
+body .avatar,
+body img.avatar.rounded-full {
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  margin-bottom: 1rem !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
+  border: 5px solid red !important; /* Test border - very visible */
+}
+
+/* More specific title selectors */
+body .portrait-title h1,
+body h1 {
+  font-size: 2rem !important; /* Bigger for testing */
+  font-weight: 700 !important;
+  margin-bottom: 0.3rem !important;
+  color: red !important; /* Test color */
+}
+
+/* More specific social media selectors */
+body ul.network-icon,
+body .network-icon,
+body .author-networks,
+body div[class*="network"] {
+  position: absolute !important;
+  right: -60px !important;
+  top: 60% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.7rem !important;
+  z-index: 999 !important;
+  background: purple !important; /* Test background */
+}
+
+/* More specific social icon styling */
+body ul.network-icon li a,
+body .network-icon a,
+body .author-networks a,
+body div[class*="network"] a {
+  display: flex !important;
+  align-items: center !important;
