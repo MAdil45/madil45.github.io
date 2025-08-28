@@ -1,1 +1,3 @@
 
+/* sanity check */
+html { outline: 0 solid red; } /* change 0→1px to see an outline briefly */
