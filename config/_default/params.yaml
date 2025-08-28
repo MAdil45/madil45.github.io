@@ -49,5 +49,5 @@ features:
     enable: false
 
 # Add custom SCSS files (this is the correct way for Hugo Academic/Blox)
-# plugins_css: ["custom"]
-custom_css: ["css/custom.css"]
+plugins_css: ["custom"]
+
