@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
      
     design:
-      css_class: dark
+      css_class: "hero-custom dark"
       # Avatar customization
       avatar:
         size: medium  # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
