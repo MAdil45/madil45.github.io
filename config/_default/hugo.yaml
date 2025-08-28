@@ -27,6 +27,12 @@ build:
     enable: true
     minified: true
     includePaths: ["assets/scss"]
+
+  # Corrected YAML syntax for resources.postProcess
+  resources:
+    - as: "text/css"
+      from: "assets/scss/all.scss"
+      to: "css/all.css"
 enableGitInfo: false
 summaryLength: 30
 pagination:
