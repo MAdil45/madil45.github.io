@@ -23,10 +23,10 @@ removePathAccents: true
 
 build:
   writeStats: true
-  [build.sass]
-    enable = true
-    minified = true
-    includePaths = ["assets/scss"]
+  sass:
+    enable: true
+    minified: true
+    includePaths: ["assets/scss"]
 enableGitInfo: false
 summaryLength: 30
 pagination:
