@@ -1,0 +1,105 @@
+// Import the theme's default styles first
+@import "hugo-blox/scss/hugoblox";
+
+// Add your custom styles below
+body {
+    background: yellow !important;
+    border: 5px solid red !important;
+}
+
+/* TEST - DELETE THIS LINE AFTER TESTING */
+body { background: yellow !important; border: 5px solid red !important; }
+
+/* More specific selectors for biography section */
+body main section,
+body section[id*="biography"],
+body section.wg-biography,
+body section.home-section,
+body .home-section {
+  padding: 8rem 0 !important;
+  background: lightblue !important; /* Test background */
+}
+
+/* More specific container selector */
+body main .container,
+body section .container,
+body .home-section .container {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+  background: lightgreen !important; /* Test background */
+}
+
+/* More specific row selector */
+body main .row,
+body section .row,
+body .home-section .row {
+  display: grid !important;
+  grid-template-columns: 320px 1fr !important;
+  gap: 3rem !important;
+  align-items: start !important;
+  width: 100% !important;
+  min-height: 400px !important;
+  background: lightcoral !important; /* Test background */
+}
+
+/* More specific left column selectors */
+body .col-12.col-lg-4,
+body .col-12.col-md-5,
+body .flex.flex-col.md\:flex-row.justify-center.gap-12 > div:first-child {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  position: relative !important;
+  width: 100% !important;
+  justify-self: center !important;
+  background: lightyellow !important; /* Test background */
+}
+
+/* More specific avatar selectors */
+body img.avatar,
+body .avatar,
+body img.avatar.rounded-full {
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  margin-bottom: 1rem !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
+  border: 5px solid red !important; /* Test border - very visible */
+}
+
+/* More specific title selectors */
+body .portrait-title h1,
+body h1 {
+  font-size: 2rem !important; /* Bigger for testing */
+  font-weight: 700 !important;
+  margin-bottom: 0.3rem !important;
+  color: red !important; /* Test color */
+}
+
+/* More specific social media selectors */
+body ul.network-icon,
+body .network-icon,
+body .author-networks,
+body div[class*="network"] {
+  position: absolute !important;
+  right: -60px !important;
+  top: 60% !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.7rem !important;
+  z-index: 999 !important;
+  background: purple !important; /* Test background */
+}
+
+/* More specific social icon styling */
+body ul.network-icon li a,
+body .network-icon a,
+body .author-networks a,
+body div[class*="network"] a {
+  display: flex !important;
+  align-items: center !important;
