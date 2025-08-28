@@ -1,154 +1,223 @@
 /* File: static/css/custom.css */
-/* Targeted CSS for Hugo Academic biography section */
 
-/* Debug border to confirm CSS is loading */
+/* Remove debug borders first */
 body {
-  border-top: 3px solid lime !important;
+  border-top: none !important;
 }
 
-/* Target any section that contains biography content */
-section[id*="biography"], 
+/* Target the main biography section */
+section[id*="biography"],
 section.wg-biography,
-section.home-section,
-.resume-biography-3,
-div[data-view-component="true"] {
-  background: rgba(255, 0, 0, 0.1) !important; /* Light red background for debugging */
+section.home-section {
+  padding: 4rem 0 !important;
 }
 
-/* More specific targeting for the container */
-.home-section .container,
-.wg-biography .container,
-section .container {
+/* Target the main container */
+.container {
   max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
-/* Target the row containing the profile */
-.home-section .row,
-.wg-biography .row,
-section .row {
-  display: grid !important;
-  grid-template-columns: 300px 1fr !important;
+/* Target the row containing profile and content */
+.row {
+  display: flex !important;
+  flex-wrap: wrap !important;
   gap: 3rem !important;
-  align-items: start !important;
-  margin: 0 !important;
-  padding: 2rem 0 !important;
+  align-items: flex-start !important;
 }
 
-/* Target the left column - this should contain avatar and info */
-.home-section .row > div:first-child,
-.wg-biography .row > div:first-child,
-section .row > div:first-child,
-.col-12:first-child,
-.col-lg-4,
-.col-md-5 {
+/* Target the left column (profile column) */
+.col-12.col-lg-4.col-md-5,
+.flex.flex-col.md\:flex-row.justify-center.gap-12 > div:first-child {
+  flex: 0 0 300px !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   text-align: center !important;
-  background: rgba(0, 255, 0, 0.1) !important; /* Light green for debugging */
-  padding: 2rem 1rem !important;
   position: relative !important;
+  min-height: 400px !important;
 }
 
-/* Target the portrait/title section */
+/* Target the profile/avatar wrapper */
+.flex.flex-col.justify-center.items-center.flex-col,
+.resume-biography .avatar-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+/* Style the avatar image */
+img.avatar.rounded-full,
+.avatar {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  margin-bottom: 1.5rem !important;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15) !important;
+  border: 4px solid white !important;
+}
+
+/* Style the portrait title section */
 .portrait-title,
-div[class*="portrait"] {
-  order: 1 !important;
+div[id*="profile"] {
+  text-align: center !important;
   margin-bottom: 2rem !important;
   width: 100% !important;
 }
 
-.portrait-title h1 {
-  font-size: 1.75rem !important;
+.portrait-title h1,
+h1 {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
   margin-bottom: 0.5rem !important;
-  font-weight: 600 !important;
+  color: #1f2937 !important;
 }
 
-/* Target the avatar */
-.avatar,
-.avatar-wrapper,
-div[class*="avatar"],
-img[class*="avatar"] {
-  order: 2 !important;
-  margin-bottom: 1rem !important;
-  width: 180px !important;
-  height: 180px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1) !important;
+/* Style the role/title text */
+.portrait-title .portrait-title-role,
+.text-lg {
+  font-size: 1.1rem !important;
+  color: #6b7280 !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.5rem !important;
 }
 
-/* Target social media icons */
+/* Style the institution text */
+.portrait-title .institution,
+.text-sm {
+  font-size: 0.95rem !important;
+  color: #9ca3af !important;
+  line-height: 1.4 !important;
+}
+
+/* Target and position social media icons */
+ul.network-icon,
 .network-icon,
 .author-networks,
-ul[class*="network"],
 div[class*="network"] {
-  order: 3 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 1rem !important;
   position: absolute !important;
-  left: calc(100% - 80px) !important;
+  right: -60px !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
-  background: rgba(0, 0, 255, 0.1) !important; /* Light blue for debugging */
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+  z-index: 10 !important;
 }
 
+/* Style individual social media icons */
+ul.network-icon li,
 .network-icon a,
 .author-networks a,
-ul[class*="network"] a,
 div[class*="network"] a {
-  color: #6b7280 !important;
-  font-size: 1.4rem !important;
-  padding: 0.5rem !important;
-  border-radius: 50% !important;
-  width: 2.5rem !important;
-  height: 2.5rem !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  background-color: white !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-  transition: all 0.3s ease !important;
+  width: 45px !important;
+  height: 45px !important;
+  background: white !important;
+  border: 2px solid #e5e7eb !important;
+  border-radius: 50% !important;
+  color: #6b7280 !important;
+  font-size: 1.2rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
 }
 
+/* Hover effects for social icons */
+ul.network-icon li a:hover,
 .network-icon a:hover,
 .author-networks a:hover,
-ul[class*="network"] a:hover,
 div[class*="network"] a:hover {
-  color: #059669 !important;
-  background-color: #f0fdf4 !important;
-  transform: scale(1.1) !important;
+  background: #10b981 !important;
+  color: white !important;
+  border-color: #10b981 !important;
+  transform: scale(1.1) translateX(-5px) !important;
+  box-shadow: 0 8px 20px rgba(16,185,129,0.3) !important;
 }
 
-/* Target the right column */
-.home-section .row > div:last-child,
-.wg-biography .row > div:last-child,
-section .row > div:last-child,
-.col-12:last-child,
-.col-lg-8,
-.col-md-7 {
-  padding-left: 0 !important;
-  background: rgba(255, 255, 0, 0.1) !important; /* Light yellow for debugging */
+/* Target the right column (content) */
+.col-12.col-lg-8.col-md-7,
+.flex.flex-col.md\:flex-row.justify-center.gap-12 > div:last-child {
+  flex: 1 !important;
+  padding-left: 2rem !important;
+  min-height: 400px !important;
 }
 
-/* Responsive adjustments */
+/* Style the About Me heading */
+h2 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #1f2937 !important;
+  margin-bottom: 1.5rem !important;
+  border-left: 4px solid #10b981 !important;
+  padding-left: 1rem !important;
+}
+
+/* Style paragraphs in the content */
+.col-12.col-lg-8.col-md-7 p,
+div[class*="content"] p {
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+  color: #4b5563 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Responsive design */
 @media (max-width: 992px) {
-  .home-section .row,
-  .wg-biography .row,
-  section .row {
-    grid-template-columns: 1fr !important;
+  .row {
+    flex-direction: column !important;
     gap: 2rem !important;
   }
   
+  .col-12.col-lg-4.col-md-5,
+  .flex.flex-col.md\:flex-row.justify-center.gap-12 > div:first-child {
+    flex: none !important;
+    width: 100% !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  ul.network-icon,
   .network-icon,
   .author-networks,
-  ul[class*="network"],
   div[class*="network"] {
     position: static !important;
     transform: none !important;
     flex-direction: row !important;
     justify-content: center !important;
-    margin-top: 1rem !important;
+    margin-top: 2rem !important;
+    right: auto !important;
+    top: auto !important;
+  }
+  
+  .col-12.col-lg-8.col-md-7,
+  .flex.flex-col.md\:flex-row.justify-center.gap-12 > div:last-child {
+    padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  img.avatar.rounded-full,
+  .avatar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  .portrait-title h1,
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  ul.network-icon li,
+  .network-icon a,
+  .author-networks a,
+  div[class*="network"] a {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1rem !important;
   }
 }
