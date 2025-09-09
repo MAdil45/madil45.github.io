@@ -1,0 +1,53 @@
+appearance:
+  mode: system          # system | light | dark
+  color: emerald        # theme color palette
+
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: 'Muhammad Adil'
+    description: 'Ph.D. Candidate in Computer Science (UVM) — Geospatial AI, Remote Sensing, Deep Learning, Forecasting, Environmental Monitoring.'
+    twitter: ''         # e.g., 'madil45'
+  analytics:
+    google_analytics: ''  # e.g., G-XXXXXXXX
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
+
+header:
+  navbar:
+    enable: true
+    blox: 'navbar'
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    logo:
+      text: 'Muhammad Adil'
+
+footer:
+  copyright:
+    notice: '© {year} Muhammad Adil. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+
+features:
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+
+# Add custom SCSS files (this is the correct way for Hugo Academic/Blox)
+plugins_css: ["custom"]
+

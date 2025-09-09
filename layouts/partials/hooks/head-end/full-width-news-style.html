@@ -1,0 +1,29 @@
+<style>
+/* Expand the markdown typography container for this section only */
+.home-section.full-width-news .prose {
+  max-width: none !important;
+  width: 100% !important;
+}
+/* Let the section container breathe to the viewport edges */
+.home-section.full-width-news .container {
+  max-width: min(1600px, 96vw) !important;
+}
+/* Two equal columns inside our raw HTML wrapper */
+.home-section.full-width-news .prose .full-width-news > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+/* Ensure each column can grow */
+.home-section.full-width-news .prose .full-width-news > div > div {
+  min-width: 0;
+}
+/* Stack on small screens */
+@media (max-width: 900px) {
+  .home-section.full-width-news .prose .full-width-news > div {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+</style>

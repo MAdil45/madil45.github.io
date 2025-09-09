@@ -1,0 +1,59 @@
+// Import theme base styles
+@import "hugo-blox/scss/hugoblox";
+
+/* ---------- Global container width ---------- */
+/* Let sections use almost the full viewport width on desktop */
+.container {
+  max-width: min(1400px, 96vw);
+}
+
+/* ---------- Home landing spacing tweaks (keep tidy) ---------- */
+.home-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* ---- Profile (biography) tweaks ---- */
+.custom-biography-section .avatar-wrapper,
+.custom-biography-section .avatar {
+  /* Nudge avatar slightly left */
+  margin-left: -1.5rem;
+}
+
+/* Center social icons under avatar */
+.custom-biography-section .network-icon-list,
+.custom-biography-section .profile .profile-links {
+  justify-content: center !important;
+}
+
+/* Optional: reduce gap between avatar and bio text */
+.custom-biography-section .profile {
+  gap: 1.25rem;
+}
+
+/* ---------- Custom: two-column block expand to edges ---------- */
+/* Apply only to the custom block we marked with css_class: full-width-news */
+.full-width-news .container,
+.full-width-news .content,
+.full-width-news .page-body {
+  max-width: 96vw !important;
+}
+
+/* Make the two columns breathe */
+.full-width-news .page-body > div {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Ensure each inner column can grow */
+.full-width-news .page-body > div > div {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* On narrow screens, stack */
+@media (max-width: 900px) {
+  .full-width-news .page-body > div {
+    flex-direction: column;
+  }
+}

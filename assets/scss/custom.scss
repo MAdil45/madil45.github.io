@@ -1,0 +1,36 @@
+/* Custom CSS plugged via params.plugins_css: ["custom"] */
+
+/* Expand the markdown (prose) wrapper only for the target homepage block */
+.home-section.full-width-news .prose {
+  max-width: none;
+  width: 100%;
+}
+
+/* Let the section's container use most of the viewport width */
+.home-section.full-width-news .container {
+  max-width: min(1600px, 96vw);
+}
+
+/* Make the inner two columns breathe and fill width */
+.prose .full-width-news > div,
+.full-width-news > div {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+
+/* Ensure both columns can grow equally */
+.prose .full-width-news > div > div,
+.full-width-news > div > div {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* Stack on small screens */
+@media (max-width: 900px) {
+  .prose .full-width-news > div,
+  .full-width-news > div {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
