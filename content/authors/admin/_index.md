@@ -82,8 +82,8 @@ education:
     date_start: 2017-09-01
     date_end: 2020-07-01
     summary: |
-      Thesis: *Multi-Scale Adaptive Super Resolution Person Re-Identification*.
-  - area: BS Telecomunication Systems
+      Thesis: *Multi-Scale Adaptive Super-Resolution Person Re-Identification*.
+  - area: BS Telecommunication Systems
     institution: Department of Communication and Cyber Security
     date_start: 2011-02-14
     date_end: 2015-08-31
@@ -101,15 +101,7 @@ skills:
       - name: Change Detection & Forecasting
         percent: 90
       - name: Generative/Imputation Models
-        percent: 85
-  - name: Programming
-    items:
-      - name: Python
-        percent: 95
-      - name: PyTorch / TensorFlow
-        percent: 90
-      - name: SQL
-        percent: 60
+
 
 languages:
   - name: English
@@ -123,6 +115,6 @@ languages:
 ## About Me
 I am a third-year PhD student in Computer Science at the University of Vermont, advised by [Prof. Safwan W. Shah](https://www.wshahaigroup.com/). My research centers on Geospatial AI, Remote Sensing, and Time-Series Forecasting for environmental monitoring, with a particular focus on water quality assessment.
 
-Currently, I am developing a pixel-level forecasting system for Cyanobacterial Harmful Algal Blooms in Lake Champlain. This work aims to develop a remote-sensing-only framework that is scalable for lakes worldwide, leveraging publicly available satellite data.
+Currently, we are developing a pixel-level forecasting system for Cyanobacterial Harmful Algal Blooms in Lake Champlain. This work aims to develop a remote-sensing-only framework that is scalable for lakes worldwide, leveraging publicly available satellite data.
 
 I am always eager to explore new opportunities for collaboration. If my research aligns with your interests or if you would like to discuss potential partnerships, please feel free to reach out.
