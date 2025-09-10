@@ -35,7 +35,7 @@ sections:
           .resume-biography .avatar { width: 220px !important; height: 220px !important; max-width: none !important; object-fit: cover; }
           .resume-biography .network-icon { justify-content: center !important; }
           /* Move whole first section a bit closer to the navbar */
-          #section-resume-biography-3 { padding-top: 0.75rem !important; }
+          #section-resume-biography-3 { padding-top: 0.1rem !important; }
           /* Nudge entire left column slightly down on desktop to align with About Me */
           @media (min-width: 768px) {
             .resume-biography > .flex-none { margin-top: 1.5rem !important; }
