@@ -34,9 +34,11 @@ sections:
           .resume-biography .avatar-wrapper { width: 220px !important; height: 220px !important; margin-left: auto !important; margin-right: auto !important; }
           .resume-biography .avatar { width: 220px !important; height: 220px !important; max-width: none !important; object-fit: cover; }
           .resume-biography .network-icon { justify-content: center !important; }
-          /* Nudge avatar slightly down on desktop to align with About Me */
+          /* Move whole first section a bit closer to the navbar */
+          #section-resume-biography-3 { padding-top: 0.75rem !important; }
+          /* Nudge entire left column slightly down on desktop to align with About Me */
           @media (min-width: 768px) {
-            .resume-biography .avatar-wrapper { margin-top: 3rem !important; }
+            .resume-biography > .flex-none { margin-top: 1.5rem !important; }
           }
           /* Keep centered on small screens */
           @media (max-width: 700px) {
