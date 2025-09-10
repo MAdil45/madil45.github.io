@@ -28,12 +28,16 @@ sections:
       text: |-
         {{< rawhtml >}}
         <style>
-          /* Homepage avatar tweaks: slightly smaller and left-aligned on desktop */
-          .resume-biography #profile { text-align: left !important; }
-          /* Match wrapper and image sizes to override inline styles */
-          .resume-biography .avatar-wrapper { width: 220px !important; height: 220px !important; margin-left: 0 !important; margin-right: auto !important; }
+          /* Homepage avatar tweaks: keep current size, center layout on desktop */
+          .resume-biography #profile { text-align: center !important; }
+          /* Match wrapper and image sizes; center the avatar */
+          .resume-biography .avatar-wrapper { width: 220px !important; height: 220px !important; margin-left: auto !important; margin-right: auto !important; }
           .resume-biography .avatar { width: 220px !important; height: 220px !important; max-width: none !important; object-fit: cover; }
-          .resume-biography .network-icon { justify-content: flex-start !important; }
+          .resume-biography .network-icon { justify-content: center !important; }
+          /* Nudge avatar slightly down on desktop to align with About Me */
+          @media (min-width: 768px) {
+            .resume-biography .avatar-wrapper { margin-top: 3rem !important; }
+          }
           /* Keep centered on small screens */
           @media (max-width: 700px) {
             .resume-biography #profile { text-align: center !important; }
