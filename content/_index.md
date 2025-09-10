@@ -22,6 +22,30 @@ sections:
         shape: circle
       background:
         color: "#ffffff"
+  - block: markdown
+    content:
+      title: ''
+      text: |-
+        {{< rawhtml >}}
+        <style>
+          /* Homepage avatar tweaks: slightly smaller and left-aligned on desktop */
+          .resume-biography #profile { text-align: left !important; }
+          /* Match wrapper and image sizes to override inline styles */
+          .resume-biography .avatar-wrapper { width: 220px !important; height: 220px !important; margin-left: 0 !important; margin-right: auto !important; }
+          .resume-biography .avatar { width: 220px !important; height: 220px !important; max-width: none !important; object-fit: cover; }
+          .resume-biography .network-icon { justify-content: flex-start !important; }
+          /* Keep centered on small screens */
+          @media (max-width: 700px) {
+            .resume-biography #profile { text-align: center !important; }
+            .resume-biography .avatar-wrapper { width: 200px !important; height: 200px !important; margin-left: auto !important; margin-right: auto !important; }
+            .resume-biography .avatar { width: 200px !important; height: 200px !important; }
+            .resume-biography .network-icon { justify-content: center !important; }
+          }
+        </style>
+        {{< /rawhtml >}}
+    design:
+      spacing:
+        padding: ["0", "0", "0", "0"]
         
   - block: markdown
     content:

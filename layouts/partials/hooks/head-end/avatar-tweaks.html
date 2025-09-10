@@ -1,0 +1,28 @@
+<style>
+/* Homepage avatar size and alignment tweaks */
+.resume-biography #profile { text-align: left !important; }
+
+/* Reduce avatar size slightly */
+.resume-biography .avatar {
+  width: 140px !important;
+  height: 140px !important;
+  max-width: none !important;
+  object-fit: cover;
+}
+
+/* Move avatar block to the left on larger screens */
+.resume-biography .avatar-wrapper {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Align social icons to left on desktop for consistency */
+.resume-biography .network-icon { justify-content: flex-start !important; }
+
+/* Keep centered on small screens */
+@media (max-width: 700px) {
+  .resume-biography #profile { text-align: center !important; }
+  .resume-biography .avatar-wrapper { margin-left: auto !important; margin-right: auto !important; }
+  .resume-biography .network-icon { justify-content: center !important; }
+}
+</style>

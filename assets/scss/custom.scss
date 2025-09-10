@@ -34,3 +34,25 @@
     gap: 1.25rem;
   }
 }
+
+/* ---- Homepage avatar tweaks ---- */
+/* Reduce size slightly and move avatar to the left within the biography section */
+.custom-biography-section .avatar {
+  width: 140px !important;
+  height: 140px !important;
+  max-width: none !important;
+  object-fit: cover;
+}
+
+.custom-biography-section .avatar-wrapper {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Keep avatar centered on small screens for balance */
+@media (max-width: 700px) {
+  .custom-biography-section .avatar-wrapper {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

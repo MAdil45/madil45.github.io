@@ -14,10 +14,25 @@
 }
 
 /* ---- Profile (biography) tweaks ---- */
-.custom-biography-section .avatar-wrapper,
-.custom-biography-section .avatar {
-  /* Nudge avatar slightly left */
-  margin-left: -1.5rem;
+/* Left-align and slightly reduce avatar on desktop */
+.custom-biography-section .avatar-wrapper {
+  justify-content: flex-start !important;
+}
+
+.custom-biography-section .avatar,
+.custom-biography-section .avatar img {
+  /* Tighter avatar size; ensure image fills container */
+  width: 140px !important;
+  height: 140px !important;
+  max-width: none !important;
+  object-fit: cover;
+}
+
+/* Keep centered on small screens */
+@media (max-width: 700px) {
+  .custom-biography-section .avatar-wrapper {
+    justify-content: center !important;
+  }
 }
 
 /* Center social icons under avatar */
