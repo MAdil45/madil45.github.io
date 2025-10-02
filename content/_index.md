@@ -119,10 +119,17 @@ sections:
             <div class="news-item">
               <div class="news-item-date">Aug 27, 2025</div>
               <div class="news-item-content">
-                <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">🛰️ We submitted our first article in the <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443" target="_blank" rel="noopener">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</a> - Stay Tuned! 😊</h3>
+                <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">🛰️ We submitted our article "From Remote Sensing to Multiple Time Horizons Forecasts: Transformers Model for CyanoHAB Intensity in Lake Champlain" in the <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443" target="_blank" rel="noopener">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</a> - Stay Tuned! 😊</h3>
         
               </div>
             </div>
+            </div>
+    <div class="news-item">
+              <div class="news-item-date">Aug 27, 2025</div>
+              <div class="news-item-content">
+                <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">🛰️ We submitted our article "From Remote Sensing to Multiple Time Horizons Forecasts: Transformers Model for CyanoHAB Intensity in Lake Champlain" in the <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443" target="_blank" rel="noopener">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</a> - Stay Tuned! 😊</h3>
+        
+              </div>
             </div>
           
           <div>
