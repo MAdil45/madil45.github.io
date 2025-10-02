@@ -63,7 +63,30 @@ sections:
               <!-- ==================== RECENT NEWS ==================== -->
               <div>
                 <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; color: #1f2937; text-align: center; padding: 10px; white-space: nowrap;">Recent News</h2>
+                <!-- NEWS ITEM START -->
+                <div class="news-item">
+                  <div class="news-item-date">Oct 1, 2025</div>
+                  <div class="news-item-content">
+                    <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">
+                      🛰️ We submitted our article "Synthetic Geospatial Scene Rendering From Satellite Imagery and Weather Data" in the
+                      <a href="https://www.isprs.org/" target="_blank" rel="noopener">International Society for Photogrammetry and Remote Sensing (ISPRS)</a> – Stay Tuned! 😊
+                    </h3>
+                  </div>
+                </div>
+                <!-- NEWS ITEM END -->
 
+                <!-- NEWS ITEM START -->
+                <div class="news-item">
+                  <div class="news-item-date">Sep 30, 2025</div>
+                  <div class="news-item-content">
+                    <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">
+                      🚀 Our Sentinel-2 Data downloading API – GeoS2Py is in the final stages – Get ready to download large-scale datasets with real-time data processing capabilities – One of its Kind :-)
+                    </h3>
+                  </div>
+                </div>
+                <!-- NEWS ITEM END -->
+
+    
                 <!-- NEWS ITEM START -->
                 <div class="news-item">
                   <div class="news-item-date">Sep 8, 2025</div>
@@ -87,28 +110,7 @@ sections:
                 </div>
                 <!-- NEWS ITEM END -->
 
-                <!-- NEWS ITEM START -->
-                <div class="news-item">
-                  <div class="news-item-date">Oct 1, 2025</div>
-                  <div class="news-item-content">
-                    <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">
-                      🛰️ We submitted our article "Synthetic Geospatial Scene Rendering From Satellite Imagery and Weather Data" in the
-                      <a href="https://www.isprs.org/" target="_blank" rel="noopener">International Society for Photogrammetry and Remote Sensing (ISPRS)</a> – Stay Tuned! 😊
-                    </h3>
-                  </div>
-                </div>
-                <!-- NEWS ITEM END -->
 
-                <!-- NEWS ITEM START -->
-                <div class="news-item">
-                  <div class="news-item-date">Sep 30, 2025</div>
-                  <div class="news-item-content">
-                    <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">
-                      🚀 Our Sentinel-2 Data downloading API – GeoS2Py is in the final stages – Get ready to download large-scale datasets with real-time data processing capabilities – One of its Kind :-)
-                    </h3>
-                  </div>
-                </div>
-                <!-- NEWS ITEM END -->
 
                 <!-- TEMPLATE (copy, paste, edit) -->
                 <!--
