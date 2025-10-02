@@ -83,8 +83,8 @@
                   <div class="news-item-content">
                     <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">
                       🛰️ We submitted our article "Synthetic Geospatial Scene Rendering From Satellite Imagery and Weather Data" in the 
-                      <a href="https://www.isprs.org/">International Society for Photogrammetry and Remote Sensing (ISPRS)
-</a> -Stay Tuned! 😊
+                      <a href="https://www.isprs.org/" target="_blank" rel="noopener">International Society for Photogrammetry and Remote Sensing (ISPRS)</a> - Stay Tuned! 😊
+
                     </h3>
                   </div>
                 </div>
@@ -95,7 +95,7 @@
                   <div class="news-item-date">Sep 30, 2025</div>
                   <div class="news-item-content">
                     <h3 style="font-size: 1.125rem; font-weight:600; margin-bottom:0.25rem; line-height:1.4; text-align:left;">
-                       🚀 Our Sentinel-2 Data downloading API - GeoS2Py is in the final stages - Get ready to download large-scale datasets with real-time data process capabilities - One of its Kind :-) 
+                  🚀 Our Sentinel-2 Data downloading API - GeoS2Py is in the final stages – Get ready to download large-scale datasets with real-time data processing capabilities – One of its Kind :-)
                     </h3>
                   </div>
                 </div>
