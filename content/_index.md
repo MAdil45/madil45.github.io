@@ -22,7 +22,7 @@ sections:
   - block: markdown
     content:
       title: ""
-      text: |-
+      text: |-8
         <style>
           /* Widen only this block */
           .prose:has(.full-width-news-section) { max-width: none !important; width: 100% !important; }
