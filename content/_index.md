@@ -23,6 +23,7 @@ sections:
     content:
       title: ""
       text: |
+        {{< rawhtml >}}
         <style>
           /* Widen only this block */
           .prose:has(.full-width-news-section) { max-width: none !important; width: 100% !important; }
@@ -144,6 +145,7 @@ sections:
             </div>
           </div>
         </div>
+        {{< /rawhtml >}}
     design:
       css_class: "full-width-news"
       spacing:
