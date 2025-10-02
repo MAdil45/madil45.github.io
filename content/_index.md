@@ -3,6 +3,7 @@
 title: ""
 date: 2022-10-24
 type: landing
+
 sections:
   - block: resume-biography-3
     content:
@@ -143,8 +144,8 @@ sections:
             </div>
           </div>
         </div>
-  design:
-    css_class: "full-width-news"
-    spacing:
-      padding: ["2rem", "0", "2rem", "0"]
+    design:
+      css_class: "full-width-news"
+      spacing:
+        padding: ["2rem", "0", "2rem", "0"]
 ---
